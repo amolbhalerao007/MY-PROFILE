@@ -2,7 +2,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
 
         body {
             font-family: 'Arial', sans-serif;
@@ -28,10 +27,11 @@
         header {
             background-color: #333;
             color: white;
-            padding: 10px 0;
+            padding: 0px 0;
             text-align: center;
             top: 0;
             z-index: 1000;
+            
         }
 
         header h1 {
@@ -116,17 +116,69 @@
         }
 
         /* Contact Section */
-        #contact {
-            text-align: center;
-        }
+#contact {
+    background-color: #f5e2e2;
+    padding: 50px 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    max-width: 600px;
+    margin: 0 auto;
+    border-style: groove; 
+    border-radius: 50px;
+    margin-top: 50px;
+}
 
-        #contact a {
-            display: block;
-            margin-bottom: 10px;
-            font-size: 1.2em;
-        }
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
 
-        /* Footer */
+#contact .form-group {
+    margin-bottom: 15px;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-style: groove; 
+    
+}
+
+#contact textarea {
+    resize: vertical;
+}
+
+#contact button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+    
+
+     /* Footer */
         footer {
             text-align: center;
             padding: 20px 0;
@@ -160,6 +212,18 @@
             .project-card {
                 width: 45%; /* Adjusted to 2 columns on medium screens */
             }
+            #contact {
+                padding: 30px 15px;
+            }
+        
+            #contact h2 {
+                font-size: 1.5em;
+            }
+        
+            #contact button[type="submit"] {
+                font-size: 14px;
+            }
+        }
         }
 
         @media (max-width: 768px) {
@@ -202,6 +266,17 @@
 
             .welcome-text {
                 font-size: 1.2em;
+            }
+            #contact {
+                padding: 20px 10px;
+            }
+        
+            #contact h2 {
+                font-size: 1.2em;
+            }
+        
+            #contact button[type="submit"] {
+                font-size: 12px;
             }
         }
   

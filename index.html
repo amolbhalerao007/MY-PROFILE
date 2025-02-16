@@ -1,32 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/young-man.png">
+    <title>Emefile Blessing 074</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
 </head>
 
 <body>
 
     <!-- Header -->
     <header>
-        <h1>Amol Bhalerao</h1>
-        <p>Web Developer | Programmer</p>
+        <!-- <section id="frontPage" class="frontPage"> -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-sm mt-3">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <!-- <a class="navLink me-5" aria-current="page" target="_blank" href="https://drive.google.com/file/d/1bb4Ik4vcpFpN0DdbxUUVuGWNRLrzkFhU/view?usp=drive_link">Resume</a> -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="navLink me-5" aria-current="page" href=""  onclick="navigateTo('#home')">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navLink me-5" href="#aboutSection"  onclick="navigateTo('aboutSection')">About</a>
+                            <li class="nav-item">
+                                <a class="navLink me-5" aria-current="page" href="#projects"  onclick="navigateTo('projects')">assignment</a>
+                            </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navLink me-5" aria-current="page" href="#contact"  onclick="navigateTo('contact')">Contact</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
     </header>
 
     <!-- Main Container -->
     <div class="container">
 
         <!-- About Me Section -->
+         <div id="home">
         <section id="about">
-            <img src="AMOL.jpg" alt="Profile Picture">
-            <p>Hi, I'm Amol Bhalerao, a passionate web developer who loves to create modern and responsive websites. I specialize in front-end development using HTML, CSS, JavaScript, and Angular.</p>
+            <img src="image/zee.jpeg" alt="Profile Picture">
+            <p>Hi, I'm Emefile Blessing, a passionate web developer who loves to create modern and responsive. <br> I specialize in front-end development using HTML, CSS, JavaScript,</p>
             <h3 class="welcome-text">Welcome to my portfolio!</h3>
         </section>
-
+    </div>
         <!-- Skills Section -->
         <section id="skills">
             <div class="skill">
@@ -47,24 +76,40 @@
             </div>
         </section>
 
+        <section id="aboutSection" class="pages">
+            <div style="height: 80px;"></div>
+            <div class="container-lg  m-section ms-auto me-auto">
+                <div class="section-heading ms-auto me-auto">
+                    About👇
+                </div>
+                <div class="aboutContent">
+                    <b>Emefile Blesing Chukwuyem</b><br>    
+                     <b>Matric:F/HD/23/3210074</b><br>
+                     <b>HDND 1 COMPUTER SCIENCE</b>
+                </div>
+            </div>
+            <div style="height:100px;"></div>
+        </section>
+
         <!-- Projects Section -->
         <section id="projects">
-            <h2>Projects</h2>
+            <h2>Assignment</h2>
             <div class="project-cards">
                 <div class="project-card">
-                    <h3>Project 1</h3>
-                    <p>An Interest Calculator is a responsive web application built using HTML, CSS, and JavaScript, enabling users to calculate simple or compound interest effortlessly.</p>
+                    <h3>Assignment 1</h3>
+                    <p><b>MACHINE LEARNING</b></p>
                     <a href="#" onclick="showProject('project1')">View Project</a>
+                   
                 </div>
                 <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>A JavaScript-based to-do list app with local storage functionality.</p>
+                    <h3>Assignment 2</h3>
+                    <p><b> TO SOLVE A PROBLEM</b></p>
                     <a href="#" onclick="showProject('project2')">View Project</a>
                 </div>
                 <div class="project-card">
                     <h3>Project 3</h3>
-                    <p>A simple personal blog with a modern layout and dynamic content.</p>
-                    <a href="#" onclick="showProject('project3')">View Project</a>
+                    <p>On Loading...</p>
+                    <!-- <a href="#" onclick="showProject('project3')">View Project</a> -->
                 </div>
             </div>
         </section>
@@ -72,14 +117,30 @@
         <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Me</h2>
-            <a href="mailto:amolbhalerao96k@gmail.com">amolbhalerao96k@gamil.com</a>
-            <a href="https://github.com/amolbhalerao007" target="_blank">GitHub Profile</a>
-            <a href="https://www.linkedin.com/in/amol-bhalerao/" target="_blank">LinkedIn Profile</a>
+            <form action="https://formspree.io/f/xvgzwjoa" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+           
         </section>
     </div>
 
     <!-- Footer -->
     <footer>
+       <b> contact </b> <p>send me an email at <a href="mailto:blessinghappy66@gmail.com">blessinghappy66@gmail.com</a>
+           <br> phone number <a href="tel:+2349069180166">+2349069180166</a>
+        </p>
         <p>&copy; Thank you for visiting my portfolio!</p>
     </footer> 
 

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Pacifico&display=swap');
+html{
+    user-select: none;
+}
+.body
+{
+    margin: 0px;
+}
+
+.navLink
+{
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+    transition: text-shadow 0.3s ease;
+}
+.navLink:hover
+{
+    text-decoration: underline;
+    text-shadow: 0px 0px 15px rgba(98, 98, 98, 0.555);
+    
+}
+.frontPageAboutHead
+{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 80px;
+    color: rgb(243, 235, 235);
+}
+.frontPageAboutText
+{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+    text-shadow: 0px 10px 20px rgba(60, 55, 55, 0.416);    
+
+}
+.m-section
+{
+    width:80%;
+}
+.section-heading
+{
+    width: 40%;
+    text-align: center;
+    font-size: 55px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom:40px;
+    text-decoration: underline;
+}
+/* .worksContainer
+{
+    padding:10px;
+    margin-bottom: 30px;
+}
+.workTitle
+{
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+} */
+.aboutContent
+{
+    width:70%;
+    margin-left: 40%;
+    font-size:20px;
+    font-weight: 300;
+    margin-top: 3px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.aboutImage
+{
+    width:20%;
+    margin-left: 40%;
+    margin-top:50px;
+}
+.footerIcons
+{
+    width:20%;
+}
+@media only screen and (max-width: 780px) 
+{
+    .frontPage
+    {
+        background-image: url("../img/frontCover1.jpeg");
+        background-position: center;
+        height: 900px;
+        width: 100%;
+    }  
+    .frontPageAbout
+    {
+        width: 100%;
+        height: 350px;
+        margin-top: 6%;
+        
+    } 
+    .frontPageAboutHead
+    {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 60px;
+    }
+    .frontPageAboutText
+    {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 28px;
+        
+    }
+    .worksSection
+    {
+        width:100%;
+    }
+    .aboutContent
+    {
+        font-size:20px;
+    }
+    .aboutImage
+    {
+        width: 70%;
+        margin-left: 15%;
+    }
+    .section-heading
+    {
+        font-size:36px;
+    }
+    .footerIcons
+    {
+        width:60%;
+    }
+    .m-section
+    {
+        width: 100%;
+    }
+    .aboutContent
+    {
+        width: 85%;
+        margin-left: 7.5%;
+    }
+}
+
+.badge-tech {
+    font-size: 14px;
+    margin: 5px;
+    padding: 1rem 1.2rem;
+    border-radius: 15px;
+    color: white;
+  }
+
+.badge-java { background-color: #f89820; }        /* Java - Orange */
+.badge-python { background-color: #306998; }      /* Python - Blue */
+.badge-html { background-color: #e34c26; }        /* HTML - Red */
+.badge-css { background-color: #264de4; }         /* CSS - Blue */
+.badge-bootstrap { background-color: #563d7c; }   /* Bootstrap - Purple */
+.badge-django { background-color: #092e20; }      /* Django - Dark Green */
+.badge-scrapy { background-color: #77bb43; }      /* Scrapy - Light Green */
+.badge-pinecone { background-color: #4C85FF; }    /* Pinecone - Blue */
+.badge-arduino { background-color: #00979D; }     /* Arduino - Teal */ 
+.badge-flask { background-color: #000000; }       /* Flask - Black */
+.badge-spring { background-color: #6DB33F; }      /* Spring - Green */
+.badge-cpp { background-color: #00599C; }         /* C++ - Dark Blue */
